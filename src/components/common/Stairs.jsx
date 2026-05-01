@@ -5,10 +5,8 @@ import { useLocation } from "react-router-dom";
 
 const Stairs = (props) => {
   const currentPath = useLocation().pathname;
-
   const stairParentRef = useRef(null);
   const pageRef = useRef(null);
-
   useGSAP(
     function () {
       const tl = gsap.timeline();
