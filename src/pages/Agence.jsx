@@ -1,4 +1,3 @@
-
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -6,10 +5,8 @@ import { useRef } from "react";
 
 const Agence = () => {
   gsap.registerPlugin(ScrollTrigger);
-
   const imageDivRef = useRef(null);
   const imageRef = useRef(null);
-
   const imageArray = [
     "/images/image1.jpg",
     "/images/image2.jpg",
@@ -53,8 +50,7 @@ const Agence = () => {
       <div id="page1" className="py-1">
         <div
           ref={imageDivRef}
-          className="absolute overflow-hidden lg:h-[20vw] h-[30vw] lg:rounded-4xl rounded-xl lg:w-[15vw] w-[25vw] lg:top-96 -top-80 lg:left-[30vw] left-[30vw]"
-        >
+          className="absolute overflow-hidden lg:h-[20vw] h-[30vw] lg:rounded-4xl rounded-xl lg:w-[15vw] w-[25vw] lg:top-96 -top-80 lg:left-[30vw] left-[30vw]">
           <img
             ref={imageRef}
             className="h-full object-cover w-full"
